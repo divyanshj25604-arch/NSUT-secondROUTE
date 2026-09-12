@@ -11,6 +11,7 @@ import { OverviewPage } from './pages/OverviewPage';
 import { ReturnsPage } from './pages/ReturnsPage';
 import { ReturnDetailPage } from './pages/ReturnDetailPage';
 import { DecisionsPage } from './pages/DecisionsPage';
+import { ExchangePage } from './pages/ExchangePage';
 import { AnalyticsPage } from './pages/AnalyticsPage';
 
 export function App() {
@@ -239,6 +240,10 @@ export function App() {
                 onAccept={handleAcceptRecommendation}
                 onOverride={handleOpenOverrideModal}
               />
+            )}
+
+            {activeTab === 'exchange' && (
+              <ExchangePage onShowToast={showToast} />
             )}
 
             {activeTab === 'analytics' && <AnalyticsPage />}

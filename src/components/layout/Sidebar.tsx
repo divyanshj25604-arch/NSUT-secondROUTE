@@ -1,6 +1,6 @@
 import React from 'react';
 import type { ActiveTab } from '../../types';
-import { LayoutDashboard, RotateCcw, GitBranch, BarChart3, HelpCircle, Building2, Settings } from 'lucide-react';
+import { LayoutDashboard, RotateCcw, GitBranch, ArrowUpRight, BarChart3, HelpCircle, Building2, Settings } from 'lucide-react';
 
 interface SidebarProps {
   activeTab: ActiveTab;
@@ -17,6 +17,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
     { id: 'overview', label: 'Overview', icon: LayoutDashboard },
     { id: 'returns', label: 'Returns', icon: RotateCcw },
     { id: 'decisions', label: 'Decisions', icon: GitBranch },
+    { id: 'exchange', label: 'Exchange', icon: ArrowUpRight },
     { id: 'analytics', label: 'Analytics', icon: BarChart3 }
   ];
 

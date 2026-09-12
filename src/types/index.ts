@@ -99,4 +99,23 @@ export interface ReturnItem {
   history: AuditEvent[];
 }
 
-export type ActiveTab = 'overview' | 'returns' | 'decisions' | 'analytics';
+export interface ExchangeItem {
+  id: string; // e.g. "EX-201"
+  returnId: string; // e.g. "SR-1027"
+  productName: string;
+  category: string;
+  originalValue: number;
+  condition: ReturnCondition;
+  grade: ConditionGrade;
+  returnReason: string;
+  warehouse: string;
+  daysSincePurchase: number;
+  currentBid: number;
+  bidsCount: number;
+  secondRouteEstimate: number;
+  timeRemaining: string;
+  status: 'Active' | 'Ending Soon' | 'Completed';
+  whyExchange: string;
+}
+
+export type ActiveTab = 'overview' | 'returns' | 'decisions' | 'exchange' | 'analytics';

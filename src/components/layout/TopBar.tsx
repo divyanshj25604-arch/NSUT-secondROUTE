@@ -54,6 +54,8 @@ export const TopBar: React.FC<TopBarProps> = ({
         return <span className="font-bold text-[#111827] text-sm">Returns Directory</span>;
       case 'decisions':
         return <span className="font-bold text-[#111827] text-sm">Decisions Queue</span>;
+      case 'exchange':
+        return <span className="font-bold text-[#111827] text-sm">Exchange Marketplace</span>;
       case 'analytics':
         return <span className="font-bold text-[#111827] text-sm">Analytics</span>;
     }
